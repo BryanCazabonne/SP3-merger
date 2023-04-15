@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.sp3merger</groupId>
+  <artifactId>sp3-merger</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SP3 Merger</name>
+  <inceptionYear>2023</inceptionYear>
+  <description>Application to merge SP3 files.</description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <sp3-merger.orekit.version>11.3.2</sp3-merger.orekit.version>
+    <sp3-merger.jackson.version>2.12.5</sp3-merger.jackson.version>
+    <sp3-merger.compiler.source>1.8</sp3-merger.compiler.source>
+    <sp3-merger.compiler.target>1.8</sp3-merger.compiler.target>
+  </properties>
+  
+  <developers>
+    <developer>
+      <name>Bryan Cazabonne</name>
+      <id>bryan</id>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <issueManagement>
+      <system>Github</system>
+      <url>https://github.com/BryanCazabonne/SP3-merger/issues</url>
+  </issueManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.orekit</groupId>
+      <artifactId>orekit</artifactId>
+      <version>${sp3-merger.orekit.version}</version>
+      <type>jar</type>
+      <optional>false</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${sp3-merger.jackson.version}</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-yaml</artifactId>
+      <version>${sp3-merger.jackson.version}</version>
+      <type>jar</type>
+    </dependency>
+  </dependencies>
+
+</project>

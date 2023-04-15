@@ -1,0 +1,12 @@
+#############################
+# Input file for SP3 merger #
+#############################
+#
+# Comments:
+#   - Lines starting with '#' are silently ignored
+#
+# Author: Bryan Cazabonne
+
+measurementFiles: ["ssacs220.b14004.e14012.D__.sp3.001.Z", "ssacs220.b14011.e14019.D__.sp3.001.Z", "ssacs220.b14018.e14026.D__.sp3.001.Z"]
+
+outputFileName: "ssacs220.b14004.e14026.D__.sp3"
